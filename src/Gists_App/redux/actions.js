@@ -6,9 +6,9 @@ export const FETCH_APIDATA_ERROR = 'FETCH_APIDATA_ERROR';
 export const FETCH_GIST_PENDING = 'FETCH_GIST_PENDING';
 export const FETCH_GIST_SUCCESS = 'FETCH_GIST_SUCCESS';
 export const FETCH_GIST_ERROR = 'FETCH_GIST_ERROR';
-export const FETCH_OWNER_PENDING = 'FETCH_GIST_PENDING';
-export const FETCH_OWNER_SUCCESS = 'FETCH_GIST_SUCCESS';
-export const FETCH_OWNER_ERROR = 'FETCH_GIST_ERROR';
+export const FETCH_OWNER_PENDING = 'FETCH_OWNER_PENDING';
+export const FETCH_OWNER_SUCCESS = 'FETCH_OWNER_SUCCESS';
+export const FETCH_OWNER_ERROR = 'FETCH_OWNER_ERROR';
 export const DETECT_LANGUAGE = 'DETECT_LANGUAGE';
 export const DETECT_URL = 'DETECT_URL';
 
@@ -88,7 +88,6 @@ export const fetchOwner = (gistName) => (dispatch) => {
       })
     })
 };
-
 
 export const detectLanguage = gistLang=> ({
   type: DETECT_LANGUAGE,

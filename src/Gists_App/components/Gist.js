@@ -16,15 +16,15 @@ function Gist() {
 	}
 
 	return(
-		<Card style={{position: 'absolute', right: 10, top: 20, width: 950}}>
+		<Card style={{ width: 950, marginRight: 15, marginTop: 20, borderRadius: 15 }}>
 			<Card.Content>
-				<Card.Header style={{fontSize: 20}}>Gist code</Card.Header>
+				<Card.Header style={{fontSize: 22, color: '#4f4b49', fontWeight: 500, textDecoration: 'underline'}}>Gist code</Card.Header>
 				<Card.Meta>
 					Language: {language}
 				</Card.Meta>
 				<Card.Description style={{textAlign: 'left'}}>
 					<SyntaxHighlighter language={language} style={agate}> 
-						{gist.list.length === 0?'Choose a file from the list':showGist(url, gist)}
+						{gist.list.length === 0?'<=== Choose a file from the list':showGist(url, gist)}
 					</SyntaxHighlighter>
 				</Card.Description>
 			</Card.Content>
